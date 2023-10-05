@@ -1,0 +1,12 @@
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\bin\Debug\net6.0\SaleOnIce.Models.deps.json
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\bin\Debug\net6.0\SaleOnIce.Models.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\bin\Debug\net6.0\SaleOnIce.Models.pdb
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.AssemblyInfoInputs.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.AssemblyInfo.cs
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.csproj.CoreCompileInputs.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\refint\SaleOnIce.Models.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.pdb
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\ref\SaleOnIce.Models.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Models\obj\Debug\net6.0\SaleOnIce.Models.csproj.AssemblyReference.cache

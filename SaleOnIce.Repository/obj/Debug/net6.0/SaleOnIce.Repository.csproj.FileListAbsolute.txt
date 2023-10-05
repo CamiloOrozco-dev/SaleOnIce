@@ -1,0 +1,17 @@
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.csproj.AssemblyReference.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.AssemblyInfoInputs.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.AssemblyInfo.cs
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.csproj.CoreCompileInputs.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Repository.deps.json
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Repository.runtimeconfig.json
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Repository.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Repository.pdb
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Models.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\bin\Debug\net6.0\SaleOnIce.Models.pdb
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.csproj.CopyComplete
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\refint\SaleOnIce.Repository.dll
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.pdb
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\SaleOnIce.Repository.genruntimeconfig.cache
+C:\Users\CamiloZapata\source\repos\Internship_SaleOnIce\SaleOnIce.Repository\obj\Debug\net6.0\ref\SaleOnIce.Repository.dll

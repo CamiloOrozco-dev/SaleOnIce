@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "F8I8L/0RQcfOcQG33eB9hMHucpexycyy4uiiw04hg92o0wvJA1fISSz16IfAQ3bbRQtJmiod26i5EJ5LcmHi7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\CamiloZapata\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
