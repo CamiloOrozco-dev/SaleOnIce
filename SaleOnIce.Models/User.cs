@@ -9,9 +9,6 @@ namespace SaleOnIce.Models
 
         public string Name { get; set; }
         public byte Image { get; set; }
-
-        public List<Product> productsUser { get; set; }
-
         public DebitCardView? debitCard { get; set; }
     }
 }

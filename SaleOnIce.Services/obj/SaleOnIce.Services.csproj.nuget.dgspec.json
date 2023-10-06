@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj": {}
+    "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
+    "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj",
         "projectName": "SaleOnIce.Models",
-        "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj",
-        "packagesPath": "C:\\Users\\CamiloZapata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\obj\\",
+        "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj",
+        "packagesPath": "C:\\Users\\Camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\CamiloZapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,21 +69,17 @@
         }
       }
     },
-    "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj": {
+    "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj",
         "projectName": "SaleOnIce.Repository",
-        "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj",
-        "packagesPath": "C:\\Users\\CamiloZapata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj",
+        "packagesPath": "C:\\Users\\Camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\CamiloZapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,15 +87,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
-                "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj"
+              "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
+                "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj"
               }
             }
           }
@@ -160,21 +150,17 @@
         }
       }
     },
-    "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj": {
+    "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj",
         "projectName": "SaleOnIce.Services",
-        "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj",
-        "packagesPath": "C:\\Users\\CamiloZapata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Services\\obj\\",
+        "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Services\\SaleOnIce.Services.csproj",
+        "packagesPath": "C:\\Users\\Camil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\CamiloZapata\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Camil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,18 +168,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
-                "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj"
+              "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj": {
+                "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Models\\SaleOnIce.Models.csproj"
               },
-              "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj": {
-                "projectPath": "C:\\Users\\CamiloZapata\\source\\repos\\Internship_SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj"
+              "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj": {
+                "projectPath": "C:\\Users\\Camil\\Desktop\\SaleOnIce\\SaleOnIce\\SaleOnIce.Repository\\SaleOnIce.Repository.csproj"
               }
             }
           }

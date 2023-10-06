@@ -3,6 +3,7 @@ using SaleOnIce.Models;
 using SaleOnIce.Services;
 using AutoMapper;
 using SaleOnIce.Models.ViewModels.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SaleOnIce.Controllers
 {
@@ -37,12 +38,13 @@ namespace SaleOnIce.Controllers
            List<Product> products = await _services.GetProductsAsync();
             if (products == null || products.Count == 0)
                return NotFound();
-     
-            return Ok (products.Select(product => _mapper.Map<ProductDto>(products)));
+            List<ProductDto> productsMapped = _mapper.Map<List<ProductDto>>(products);
+            return Ok(productsMapped);
         }
 
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:int}") ]
+        [Authorize] //TODO:: study
         public async Task<ActionResult<Product?>> GetByIdAsync([FromRoute] int id)
         {
             var product = await _services.GetProductByIdAsync(id);
