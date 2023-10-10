@@ -2,9 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SaleOnIce;
 using SaleOnIce.Repository;
-using AutoMapper;
-using SaleOnIce.Models; 
-using SaleOnIce.Models.ViewModels.DTOs;
 
 public class Program
 {
@@ -16,7 +13,7 @@ public class Program
 
         startup.ConfigureServices(builder.Services);
 
-        builder.Services.AddSqlServer<SaleOnIceContext>(builder.Configuration.GetConnectionString("defaultConnection") );
+        builder.Services.AddSqlServer<SaleOnIceContext>(builder.Configuration.GetConnectionString("defaultConnection"));
         builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
         var app = builder.Build();

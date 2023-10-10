@@ -1,10 +1,10 @@
 ﻿using Microsoft.OpenApi.Models;
+using SaleOnIce.Models;
+using SaleOnIce.Models.DTOs;
+using SaleOnIce.Models.Helpers;
 using SaleOnIce.Repository;
 using SaleOnIce.Services;
-using AutoMapper;
-using SaleOnIce.Models;
-using SaleOnIce.Models.ViewModels.DTOs;
-
+using SaleOnIce.Services.Helpers;
 using System.Text.Json.Serialization;
 
 namespace SaleOnIce
@@ -23,17 +23,19 @@ namespace SaleOnIce
             services.AddControllers()
                 .AddJsonOptions(
                 x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-          
 
-            services.AddAutoMapper(typeof(Startup).Assembly);
-            services.AddScoped(typeof(IRepository<>),typeof(Repository<>));
-            services.AddScoped<IPurchaseRepository,PurchaseRepository>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IPurchaseRepository, PurchaseRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
-            
+
             services.AddScoped<IUserServices, UserServices>();
-            services.AddScoped <IProductServices, ProductServices>();
-            services.AddScoped <IPurchaseServices, PurchaseServices>();
+            services.AddScoped<IProductServices, ProductServices>();
+            services.AddScoped<IPurchaseServices, PurchaseServices>();
+            services.AddScoped<IShoppingCartServices, ShoppingCartServices>();
+
+            services.AddScoped<IConverter<Product, ProductDto>, ProductConverter>();
+            services.AddScoped<IConverter<Purchase, PurchaseDto>, PurchaseConverter>();
 
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(contact =>
@@ -45,7 +47,6 @@ namespace SaleOnIce
             })
 
              );
-          
         }
 
         public void ConfigureMiddlewares(IApplicationBuilder app, IHostEnvironment env)
@@ -72,6 +73,7 @@ namespace SaleOnIce
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();

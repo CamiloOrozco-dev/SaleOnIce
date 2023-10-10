@@ -2,14 +2,12 @@
 {
     public class Purchase
     {
-  
         public int Id { get; set; }
 
-        public DateTime Date { get; set; }
+        public List<Product> Products { get; set; }
 
-        public Purchase()
-        {
-            Date = DateTime.Now;
-        }
+        public double Total { get; set; }
+
+        public DateTime Date { get; set; }
     }
 }

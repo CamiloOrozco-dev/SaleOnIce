@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SaleOnIce.Models;
+using SaleOnIce.Models.DTOs;
 
 namespace SaleOnIce.Services
 {
     public interface IShoppingCartServices
     {
+        Task<Purchase> GeneratePurchase(List<ProductDto> products);
     }
 }

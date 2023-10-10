@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SaleOnIce.Models;
+﻿using SaleOnIce.Models;
 
 namespace SaleOnIce.Repository
 {
-    public interface IUserRepository : IRepository <User>
+    public interface IUserRepository : IRepository<User>
     {
+        Task<DebitCard> GetDebitCardAsync(DebitCard debitCard);
+        Task <DebitCard> AddDebitCardAsync (DebitCard debitCard, int idUser);   
+
+
     }
 }

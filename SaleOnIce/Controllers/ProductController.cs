@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using SaleOnIce.Models;
+using SaleOnIce.Models.DTOs;
 using SaleOnIce.Services;
-using AutoMapper;
-using SaleOnIce.Models.ViewModels.DTOs;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace SaleOnIce.Controllers
 {
@@ -13,72 +14,134 @@ namespace SaleOnIce.Controllers
     {
         private readonly IProductServices _services;
 
-        private readonly IMapper _mapper; 
+        private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductController"/> class.
+        /// </summary>
+        /// <param name="productServices">The product services.</param>
+        /// <param name="mapper">The AutoMapper instance for mapping between DTOs and entities.</param>
         public ProductController(IProductServices productServices, IMapper mapper)
         {
             _services = productServices;
             _mapper = mapper;
         }
 
-        [HttpPost(Name = "AddProduct")]
+        /// <summary>
+        /// Add a new product.
+        /// </summary>
+        /// <param name="productDto">The DTO representing the product to add.</param>
+        /// <returns>The added product.</returns>
+        [HttpPost]
+        [SwaggerOperation("Add a new product")]
+        [SwaggerResponse(200, "The product was added successfully")]
         public async Task<ActionResult<Product>> PostAsync([FromBody] ProductDto productDto)
         {
+            try
+            {
+                Product product = await _services.AddProductAsync(productDto);
+                return product;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while fetching products: {ex.Message}");
+            }
+        }  
 
-            Product productMap = _mapper.Map<Product>(productDto);
-            Product product = await _services.AddProductAsync(productMap);
-            return product;
-
-   
-        }
-
-        [HttpGet(Name = "GetAllProducts")]
+        /// <summary>
+        /// Get all products.
+        /// </summary>
+        /// <returns>A list of ProductDto objects representing products.</returns>
+        [HttpGet]
+        [SwaggerOperation("Get all products")]
+        [SwaggerResponse(200, "List of products", typeof(List<ProductDto>))]
         public async Task<ActionResult<List<ProductDto>>> GetAsync()
         {
-           List<Product> products = await _services.GetProductsAsync();
-            if (products == null || products.Count == 0)
-               return NotFound();
-     
-            return Ok (products.Select(product => _mapper.Map<ProductDto>(products)));
+            try
+            {
+                var products = await _services.GetProductsAsync();
+                if (products == null)
+                    return NotFound();
+
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while fetching products: {ex.Message}");
+            }
         }
 
+        /// <summary>.
+        /// Gets a product by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the product to be obtained.</param>
+        /// <returns>A ProductDto object that represents the product.</returns>
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Product?>> GetByIdAsync([FromRoute] int id)
+        [SwaggerOperation("Get one product by Id")]
+        [SwaggerResponse(200, "Product with Id:", typeof(ProductDto))]
+        public async Task<ActionResult<ProductDto?>> GetByIdAsync([FromRoute] int id)
         {
-            var product = await _services.GetProductByIdAsync(id);
-            if (id != product?.Id)
-                BadRequest();
+            try
+            {
+                var product = await _services.GetProductByIdAsync(id);
+                if (id != product?.IdProduct)
 
-            if (product == null)
-                return NotFound(product.Id);
-            return Ok(product);
+                    return NotFound();
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while fetching products: {ex.Message}");
+            }
         }
-            
+
+        /// <summary>
+        /// Update a product by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the product to update.</param>
+        /// <param name="productDto">The DTO representing the updated product.</param>
+        /// <returns>The updated product or an error response.</returns>
+
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<Product?>> PutAsync([FromRoute] int id, [FromBody] Product product)
+        public async Task<ActionResult<Product?>> PutAsync([FromRoute] int id, [FromBody] ProductDto product)
         {
-            if (id != product.Id)
-                return BadRequest();
+            try
+            {
+                var productExist = await _services.GetProductByIdAsync(id);
+                if (id != product.IdProduct)
+                    return NotFound();
 
-            var productExist = await _services.GetProductByIdAsync(id);
-            if (productExist is null)
-                return NotFound(productExist?.Id);
-
-
-            await _services.PutProductAsync(product, id);
-            return Ok(productExist);
+                await _services.PutProductAsync(product, id);
+                return Ok(productExist);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while fetching products: {ex.Message}");
+            }
         }
+
+        /// <summary>
+        /// Delete a product by its ID.
+        /// </summary>
+        /// <param name="id">The ID of the product to delete.</param>
 
         [HttpDelete("{id:int}")]
         public async Task<ActionResult<Product?>> DeleteAsync([FromRoute] int id)
 
         {
-            var product = await _services.GetProductByIdAsync(id); 
-            if (product is null)
-                return NotFound();
-
+            try
+            {
+                var product = await _services.GetProductByIdAsync(id);
+                if (product is null)
+                    return NotFound();
                 await _services.DeleteProductAsync(id);
-            return Ok(product);
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred while fetching products: {ex.Message}");
+            }
         }
     }
 }

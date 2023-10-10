@@ -1,21 +1,20 @@
 ﻿using SaleOnIce.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SaleOnIce.Models.DTOs;
 
-namespace SaleOnIce.Services 
-{ 
-    public interface IProductServices 
+namespace SaleOnIce.Services
+{
+    public interface IProductServices
     {
+        Task<List<ProductDto>> GetProductsAsync();
 
-        Task<List<Product>> GetProductsAsync();
-        Task<Product?> GetProductByIdAsync(int id);
-        Task<Product> AddProductAsync(Product product);
-        Task<Product?> PutProductAsync(Product product, int id);
+        Task<ProductDto> GetProductByIdAsync(int id);
+
+        Task<Product> AddProductAsync(ProductDto product);
+
+        Task<Product?> PutProductAsync(ProductDto product, int id);
+
         Task DeleteProductAsync(int id);
-         bool ProductIsInStock(int quantity, int id);
 
+        Task<List<Product>> UpdateProductStockAsync(List<ProductDto> products);
     }
 }

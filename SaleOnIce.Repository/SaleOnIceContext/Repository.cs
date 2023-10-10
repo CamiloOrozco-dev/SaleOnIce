@@ -52,14 +52,14 @@ namespace SaleOnIce.Repository
             await _context.SaveChangesAsync();
             return existingEntity;
         }
+
         public async Task DeleteAsync(int id)
         {
             var entity = await _context.Set<TEntity>().FindAsync(id);
             if (entity != null)
-           
+
                 _context.Set<TEntity>().Remove(entity);
-                await _context.SaveChangesAsync();
-            
+            await _context.SaveChangesAsync();
         }
     }
 }

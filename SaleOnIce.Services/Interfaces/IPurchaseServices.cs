@@ -1,18 +1,11 @@
-﻿using SaleOnIce.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SaleOnIce.Models.DTOs;
 
 namespace SaleOnIce.Services
 {
-    public interface IPurchaseServices 
+    public interface IPurchaseServices
     {
+        Task<List<PurchaseDto>> GetPurchases();
 
-        void GenerateTotal();
-
-
-        
+        Task<PurchaseDto> GetPurchaseByIdAsync(int id);
     }
 }

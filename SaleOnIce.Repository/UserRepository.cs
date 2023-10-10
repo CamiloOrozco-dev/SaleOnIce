@@ -1,9 +1,4 @@
 ﻿using SaleOnIce.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SaleOnIce.Repository
 {
@@ -11,6 +6,16 @@ namespace SaleOnIce.Repository
     {
         public UserRepository(SaleOnIceContext context) : base(context)
         {
+        }
+
+        public Task<DebitCard> AddDebitCardAsync(DebitCard debitCard, int idUser)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<DebitCard> GetDebitCardAsync(DebitCard debitCard)
+        {
+            throw new NotImplementedException();
         }
     }
 }

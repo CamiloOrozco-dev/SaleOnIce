@@ -1,13 +1,6 @@
-﻿using SaleOnIce.Models.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SaleOnIce.Models
+﻿namespace SaleOnIce.Models
 {
-    public class DebitCardView 
+    public class DebitCard
     {
         public string CardHolderName { get; }
         public string CardNumber { get; }
